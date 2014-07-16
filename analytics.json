@@ -1,0 +1,4500 @@
+{
+  "type": "StandardReport",
+  "title": "TV Thailand Report - Google Analytics",
+  "helpTopicId": "0",
+  "components": [
+    {
+      "id": "2123-table",
+      "type": "Table",
+      "tableControl": {
+        "id": "2123-table-tableControl",
+        "type": "TableControl",
+        "conditionBuilder": {
+          "conditionGroup": [
+            
+          ],
+          "conceptPicker": {
+            "group": [
+              {
+                "type": "DIMENSION",
+                "label": "Dimensions",
+                "conceptRef": [
+                  "analytics.customDimension2"
+                ],
+                "shouldHighlight": false
+              },
+              {
+                "type": "METRIC",
+                "label": "Metrics",
+                "conceptRef": [
+                  "analytics.appviews",
+                  "analytics.visits"
+                ],
+                "shouldHighlight": false
+              }
+            ],
+            "concept": [
+              {
+                "conceptName": "analytics.customDimension2",
+                "displayName": "Program",
+                "type": "DIMENSION",
+                "enumValues": [
+                  
+                ],
+                "tooltipId": 2721638,
+                "scope": [
+                  
+                ],
+                "family": "STRING",
+                "deprecated": false
+              },
+              {
+                "conceptName": "analytics.appviews",
+                "displayName": "Screen Views",
+                "type": "METRIC",
+                "enumValues": [
+                  
+                ],
+                "tooltipId": 2413852,
+                "scope": [
+                  "VISITOR",
+                  "VISIT",
+                  "HIT"
+                ],
+                "family": "NUMBER",
+                "deprecated": false
+              },
+              {
+                "conceptName": "analytics.visits",
+                "displayName": "Sessions",
+                "type": "METRIC",
+                "enumValues": [
+                  
+                ],
+                "tooltipId": 2631008,
+                "scope": [
+                  "VISITOR"
+                ],
+                "family": "NUMBER",
+                "deprecated": false
+              }
+            ],
+            "groupView": true,
+            "hideGroupViewSwitch": false,
+            "hideSearchBox": false
+          },
+          "enableMultipleConditions": false,
+          "showDefaultIfEmpty": true,
+          "autocompleteMetric": "analytics.appviews"
+        },
+        "dimensionPicker": {
+          "group": [
+            {
+              "type": "DIMENSION",
+              "label": "Acquisitions",
+              "conceptRef": [
+                "analytics.trafficChannel",
+                "analytics.medium",
+                "analytics.referralPath",
+                "analytics.source",
+                "analytics.sourceMedium",
+                "analytics.trafficType"
+              ],
+              "shouldHighlight": false
+            },
+            {
+              "type": "DIMENSION",
+              "label": "Advertising",
+              "conceptRef": [
+                "analytics.adContent",
+                "analytics.adDistributionNetwork",
+                "analytics.adFormat",
+                "analytics.adGroup",
+                "analytics.adSlot",
+                "analytics.adSlotPosition",
+                "analytics.adwordsAdGroupID",
+                "analytics.adwordsCampaignID",
+                "analytics.adwordsCreativeID",
+                "analytics.adwordsCriteriaID",
+                "analytics.adwordsExternalCustomerID",
+                "analytics.campaign",
+                "analytics.campaignCode",
+                "analytics.destinationUrl",
+                "analytics.displayUrl",
+                "analytics.keyword",
+                "analytics.adwordsCriteriaType",
+                "analytics.query",
+                "analytics.contentDomain",
+                "analytics.contentPlacementType",
+                "analytics.contentUrl",
+                "analytics.matchType",
+                "analytics.clickSocialAnnotationType",
+                "analytics.targetingType",
+                "analytics.isTrueViewVideoAd"
+              ],
+              "shouldHighlight": false
+            },
+            {
+              "type": "DIMENSION",
+              "label": "Custom Dimensions",
+              "conceptRef": [
+                "analytics.customDimension1",
+                "analytics.customDimension5",
+                "analytics.customDimension3",
+                "analytics.customDimension6",
+                "analytics.customDimension4"
+              ],
+              "shouldHighlight": false
+            },
+            {
+              "type": "DIMENSION",
+              "label": "Custom Variables",
+              "conceptRef": [
+                "analytics.customVarName1",
+                "analytics.customVarName2",
+                "analytics.customVarName3",
+                "analytics.customVarName4",
+                "analytics.customVarName5",
+                "analytics.customVarValue1",
+                "analytics.customVarValue2",
+                "analytics.customVarValue3",
+                "analytics.customVarValue4",
+                "analytics.customVarValue5"
+              ],
+              "shouldHighlight": false
+            },
+            {
+              "type": "DIMENSION",
+              "label": "Ecommerce",
+              "conceptRef": [
+                "analytics.affiliation",
+                "analytics.checkoutOptions",
+                "analytics.currencyCode",
+                "analytics.daysToTransaction",
+                "analytics.internalPromotionCreative",
+                "analytics.internalPromotionId",
+                "analytics.internalPromotionName",
+                "analytics.internalPromotionPosition",
+                "analytics.orderCouponCode",
+                "analytics.productName",
+                "analytics.productCategory",
+                "analytics.productSku",
+                "analytics.countOfVisitsToATransaction",
+                "analytics.shoppingStage",
+                "analytics.transactionId"
+              ],
+              "shouldHighlight": false
+            },
+            {
+              "type": "DIMENSION",
+              "label": "Engagement",
+              "conceptRef": [
+                "analytics.appId",
+                "analytics.appInstallerId",
+                "analytics.appName",
+                "analytics.appVersion",
+                "analytics.searchDestinationPage",
+                "analytics.eventAction",
+                "analytics.eventCategory",
+                "analytics.eventLabel",
+                "analytics.exceptionDescription",
+                "analytics.exitPagePath",
+                "analytics.exitContentDescription",
+                "analytics.gwoExperimentId",
+                "analytics.fullReferrer",
+                "analytics.hostname",
+                "analytics.landingPagePath",
+                "analytics.landingPageGroup1",
+                "analytics.landingPageGroup2",
+                "analytics.landingPageGroup3",
+                "analytics.landingPageGroup4",
+                "analytics.landingPageGroup5",
+                "analytics.landingContentDescription",
+                "analytics.nextPageGroup1",
+                "analytics.nextPageGroup2",
+                "analytics.nextPageGroup3",
+                "analytics.nextPageGroup4",
+                "analytics.nextPageGroup5",
+                "analytics.nextPagePath",
+                "analytics.pagePath",
+                "analytics.pageDepth",
+                "analytics.pageGroup1",
+                "analytics.pageGroup2",
+                "analytics.pageGroup3",
+                "analytics.pageGroup4",
+                "analytics.pageGroup5",
+                "analytics.pagePathLevel1",
+                "analytics.pagePathLevel2",
+                "analytics.pagePathLevel3",
+                "analytics.pagePathLevel4",
+                "analytics.pageTitle",
+                "analytics.previousPageGroup1",
+                "analytics.previousPageGroup2",
+                "analytics.previousPageGroup3",
+                "analytics.previousPageGroup4",
+                "analytics.previousPageGroup5",
+                "analytics.previousPagePath",
+                "analytics.searchKeywordRefinement",
+                "analytics.appviewDepth",
+                "analytics.contentDescription",
+                "analytics.searchKeyword",
+                "analytics.secondPagePath",
+                "analytics.searchCategory",
+                "analytics.searchUsed",
+                "analytics.searchStartPage",
+                "analytics.userTimingCategory",
+                "analytics.userTimingLabel",
+                "analytics.userTimingVariable",
+                "analytics.userDefinedValue",
+                "analytics.gwoCombinationId"
+              ],
+              "shouldHighlight": false
+            },
+            {
+              "type": "DIMENSION",
+              "label": "Social",
+              "conceptRef": [
+                "analytics.socialContentURL",
+                "analytics.socialAction",
+                "analytics.socialTarget",
+                "analytics.originatingSocialNetwork",
+                "analytics.socialNetwork",
+                "analytics.socialNetworkActionVisit",
+                "analytics.socialNetworkAction",
+                "analytics.hasSocialSourceReferral",
+                "analytics.socialEngagementType"
+              ],
+              "shouldHighlight": false
+            },
+            {
+              "type": "DIMENSION",
+              "label": "Time",
+              "conceptRef": [
+                "analytics.date",
+                "analytics.nthDay",
+                "analytics.day",
+                "analytics.dayOfWeek",
+                "analytics.dayOfWeekName",
+                "analytics.hour",
+                "analytics.nthHour",
+                "analytics.dateHour",
+                "analytics.isoYearIsoWeek",
+                "analytics.isoWeek",
+                "analytics.isoYear",
+                "analytics.minute",
+                "analytics.nthMinute",
+                "analytics.nthMonth",
+                "analytics.month",
+                "analytics.yearMonth",
+                "analytics.nthWeek",
+                "analytics.week",
+                "analytics.yearWeek",
+                "analytics.year"
+              ],
+              "shouldHighlight": false
+            },
+            {
+              "type": "DIMENSION",
+              "label": "Users",
+              "conceptRef": [
+                "analytics.brandingInterest",
+                "analytics.age",
+                "analytics.browser",
+                "analytics.browserVersion",
+                "analytics.city",
+                "analytics.continent",
+                "analytics.countOfVisits",
+                "analytics.country",
+                "analytics.daysSinceLastVisit",
+                "analytics.deviceCategory",
+                "analytics.flashVersion",
+                "analytics.gender",
+                "analytics.inmarketInterest",
+                "analytics.javaEnabled",
+                "analytics.language",
+                "analytics.latitude",
+                "analytics.longitude",
+                "analytics.dma",
+                "analytics.isMobile",
+                "analytics.mobileDeviceBranding",
+                "analytics.mobileDeviceInfo",
+                "analytics.mobileDeviceMarketingName",
+                "analytics.mobileDeviceModel",
+                "analytics.mobileInputSelector",
+                "analytics.networkDomain",
+                "analytics.operatingSystem",
+                "analytics.operatingSystemVersion",
+                "analytics.interest",
+                "analytics.region",
+                "analytics.screenColors",
+                "analytics.screenResolution",
+                "analytics.networkLocation",
+                "analytics.visitDuration",
+                "analytics.sourcePropertyName",
+                "analytics.sourcePropertyId",
+                "analytics.subContinent",
+                "analytics.visitorBucket",
+                "analytics.visitorType"
+              ],
+              "shouldHighlight": false
+            }
+          ],
+          "concept": [
+            {
+              "conceptName": "analytics.adContent",
+              "displayName": "Ad Content",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032749,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adDistributionNetwork",
+              "displayName": "Ad Distribution Network",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2618916,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adFormat",
+              "displayName": "Ad Format",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3394389,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adGroup",
+              "displayName": "Ad Group",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032745,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adSlot",
+              "displayName": "Ad Slot",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032751,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adSlotPosition",
+              "displayName": "Ad Slot Position",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032753,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adwordsAdGroupID",
+              "displayName": "AdWords Ad Group ID",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047130,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adwordsCampaignID",
+              "displayName": "AdWords Campaign ID",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047134,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adwordsCreativeID",
+              "displayName": "AdWords Creative ID",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047136,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adwordsCriteriaID",
+              "displayName": "AdWords Criteria ID",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1046525,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adwordsExternalCustomerID",
+              "displayName": "AdWords Customer ID",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047138,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.affiliation",
+              "displayName": "Affiliation",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032823,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.brandingInterest",
+              "displayName": "Affinity Category (reach)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3339326,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.age",
+              "displayName": "Age",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1711205,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.appId",
+              "displayName": "App ID",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2643584,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.appInstallerId",
+              "displayName": "App Installer ID",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2643633,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.appName",
+              "displayName": "App Name",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2413843,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.appVersion",
+              "displayName": "App Version",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2413795,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.browser",
+              "displayName": "Browser",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032910,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.browserVersion",
+              "displayName": "Browser Version",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032912,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.campaign",
+              "displayName": "Campaign",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032809,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.campaignCode",
+              "displayName": "Campaign Code",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customDimension1",
+              "displayName": "Category",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2721638,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customDimension5",
+              "displayName": "Channel",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2721638,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.checkoutOptions",
+              "displayName": "Checkout Options",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3434520,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.city",
+              "displayName": "City",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032798,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.continent",
+              "displayName": "Continent",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032804,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.countOfVisits",
+              "displayName": "Count of Sessions",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2630904,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.country",
+              "displayName": "Country / Territory",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032743,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.currencyCode",
+              "displayName": "Currency Code",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2655783,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customVarName1",
+              "displayName": "Custom Variable (Key 1)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3546752,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customVarName2",
+              "displayName": "Custom Variable (Key 2)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3546752,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customVarName3",
+              "displayName": "Custom Variable (Key 3)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3546752,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customVarName4",
+              "displayName": "Custom Variable (Key 4)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3546752,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customVarName5",
+              "displayName": "Custom Variable (Key 5)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3546752,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customVarValue1",
+              "displayName": "Custom Variable (Value 01)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 4350728,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customVarValue2",
+              "displayName": "Custom Variable (Value 02)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 4350728,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customVarValue3",
+              "displayName": "Custom Variable (Value 03)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 4350728,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customVarValue4",
+              "displayName": "Custom Variable (Value 04)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 4350728,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customVarValue5",
+              "displayName": "Custom Variable (Value 05)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 4350728,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.date",
+              "displayName": "Date",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047201,
+              "scope": [
+                
+              ],
+              "family": "DATE",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nthDay",
+              "displayName": "Day Index",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047204,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.day",
+              "displayName": "Day of the month",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032731,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.dayOfWeek",
+              "displayName": "Day of Week",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047206,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.dayOfWeekName",
+              "displayName": "Day of Week Name",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3082110,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.daysSinceLastVisit",
+              "displayName": "Days Since Last Session",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2630926,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.daysToTransaction",
+              "displayName": "Days to Transaction",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032903,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.trafficChannel",
+              "displayName": "Default Channel Grouping",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.searchDestinationPage",
+              "displayName": "Destination Page",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047209,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.destinationUrl",
+              "displayName": "Destination URL",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047211,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.deviceCategory",
+              "displayName": "Device Category",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2980153,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.displayUrl",
+              "displayName": "Display URL",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3394328,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customDimension3",
+              "displayName": "Episode",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2721638,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.eventAction",
+              "displayName": "Event Action",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032900,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.eventCategory",
+              "displayName": "Event Category",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032899,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.eventLabel",
+              "displayName": "Event Label",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032821,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.exceptionDescription",
+              "displayName": "Exception Description",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2533469,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.exitPagePath",
+              "displayName": "Exit Page",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032819,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.exitContentDescription",
+              "displayName": "Exit Screen",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2413848,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.gwoExperimentId",
+              "displayName": "Experiment ID",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2525474,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.flashVersion",
+              "displayName": "Flash Version",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032963,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.fullReferrer",
+              "displayName": "Full Referrer",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047687,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.gender",
+              "displayName": "Gender",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1711207,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.hostname",
+              "displayName": "Hostname",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032966,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.hour",
+              "displayName": "Hour",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032792,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nthHour",
+              "displayName": "Hour Index",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047284,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.dateHour",
+              "displayName": "Hour of Day",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2618918,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.inmarketInterest",
+              "displayName": "In-Market Segment",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3339260,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.internalPromotionCreative",
+              "displayName": "Internal Promotion Creative",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3290256,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.internalPromotionId",
+              "displayName": "Internal Promotion ID",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3671229,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.internalPromotionName",
+              "displayName": "Internal Promotion Name",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3290258,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.internalPromotionPosition",
+              "displayName": "Internal Promotion Position",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3290260,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.isoYearIsoWeek",
+              "displayName": "ISO Week of ISO Year",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3395166,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.isoWeek",
+              "displayName": "ISO Week of the Year",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3394331,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.isoYear",
+              "displayName": "ISO Year",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3395038,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.javaEnabled",
+              "displayName": "Java Support",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032917,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.keyword",
+              "displayName": "Keyword",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032747,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.adwordsCriteriaType",
+              "displayName": "Keyword Match Type",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2976157,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.landingPagePath",
+              "displayName": "Landing Page",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032768,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.landingPageGroup1",
+              "displayName": "Landing Page Group 1 (Landing Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1724517,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.landingPageGroup2",
+              "displayName": "Landing Page Group 2 (Landing Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1724517,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.landingPageGroup3",
+              "displayName": "Landing Page Group 3 (Landing Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1724517,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.landingPageGroup4",
+              "displayName": "Landing Page Group 4 (Landing Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1724517,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.landingPageGroup5",
+              "displayName": "Landing Page Group 5 (Landing Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1724517,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.landingContentDescription",
+              "displayName": "Landing Screen",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2413797,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.language",
+              "displayName": "Language",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032741,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.latitude",
+              "displayName": "Latitude",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047297,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.longitude",
+              "displayName": "Longitude",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047301,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.query",
+              "displayName": "Matched Search Query",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047307,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.medium",
+              "displayName": "Medium",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032755,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.dma",
+              "displayName": "Metro",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.minute",
+              "displayName": "Minute",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3539355,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nthMinute",
+              "displayName": "Minute Index",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.isMobile",
+              "displayName": "Mobile (Including Tablet)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032800,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.mobileDeviceBranding",
+              "displayName": "Mobile Device Branding",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1235674,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.mobileDeviceInfo",
+              "displayName": "Mobile Device Info",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1294858,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.mobileDeviceMarketingName",
+              "displayName": "Mobile Device Marketing Name",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1235742,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.mobileDeviceModel",
+              "displayName": "Mobile Device Model",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1235678,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.mobileInputSelector",
+              "displayName": "Mobile Input Selector",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1235680,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nthMonth",
+              "displayName": "Month Index",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047332,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.month",
+              "displayName": "Month of the year",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032733,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.yearMonth",
+              "displayName": "Month of Year",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2618963,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.networkDomain",
+              "displayName": "Network Domain",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032969,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nextPageGroup1",
+              "displayName": "Next Page Group 1 (Next Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342683,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nextPageGroup2",
+              "displayName": "Next Page Group 2 (Next Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342683,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nextPageGroup3",
+              "displayName": "Next Page Group 3 (Next Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342683,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nextPageGroup4",
+              "displayName": "Next Page Group 4 (Next Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342683,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nextPageGroup5",
+              "displayName": "Next Page Group 5 (Next Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342683,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nextPagePath",
+              "displayName": "Next Page Path",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047209,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.operatingSystem",
+              "displayName": "Operating System",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032961,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.operatingSystemVersion",
+              "displayName": "Operating System Version",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032914,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.orderCouponCode",
+              "displayName": "Order Coupon Code",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3290044,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.interest",
+              "displayName": "Other Category",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1711148,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pagePath",
+              "displayName": "Page",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032816,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pageDepth",
+              "displayName": "Page Depth",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032735,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pageGroup1",
+              "displayName": "Page Group 1 (Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342681,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pageGroup2",
+              "displayName": "Page Group 2 (Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342681,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pageGroup3",
+              "displayName": "Page Group 3 (Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342681,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pageGroup4",
+              "displayName": "Page Group 4 (Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342681,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pageGroup5",
+              "displayName": "Page Group 5 (Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342681,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pagePathLevel1",
+              "displayName": "Page path level 1",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1187454,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pagePathLevel2",
+              "displayName": "Page path level 2",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1187456,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pagePathLevel3",
+              "displayName": "Page path level 3",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1187458,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pagePathLevel4",
+              "displayName": "Page path level 4",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1187460,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.pageTitle",
+              "displayName": "Page Title",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032759,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.contentDomain",
+              "displayName": "Placement Domain",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047355,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.contentPlacementType",
+              "displayName": "Placement Type",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047163,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.contentUrl",
+              "displayName": "Placement URL",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047358,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.previousPageGroup1",
+              "displayName": "Previous Page Group 1 (Previous Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342685,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.previousPageGroup2",
+              "displayName": "Previous Page Group 2 (Previous Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342685,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.previousPageGroup3",
+              "displayName": "Previous Page Group 3 (Previous Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342685,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.previousPageGroup4",
+              "displayName": "Previous Page Group 4 (Previous Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342685,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.previousPageGroup5",
+              "displayName": "Previous Page Group 5 (Previous Content Group)",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1342685,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.previousPagePath",
+              "displayName": "Previous Page Path",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047724,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.productName",
+              "displayName": "Product",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032828,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.productCategory",
+              "displayName": "Product Category",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032907,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.productSku",
+              "displayName": "Product SKU",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032904,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.matchType",
+              "displayName": "Query Match Type",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2618961,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customDimension6",
+              "displayName": "Radio",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2721638,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.referralPath",
+              "displayName": "Referral Path",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032757,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.searchKeywordRefinement",
+              "displayName": "Refined Keyword",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032765,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.region",
+              "displayName": "Region",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032802,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.screenColors",
+              "displayName": "Screen Colors",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032919,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.appviewDepth",
+              "displayName": "Screen Depth",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2500705,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.contentDescription",
+              "displayName": "Screen Name",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2413845,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.screenResolution",
+              "displayName": "Screen Resolution",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032964,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.customDimension4",
+              "displayName": "Search",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2721638,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.searchKeyword",
+              "displayName": "Search Term",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032763,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.secondPagePath",
+              "displayName": "Second Page",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047778,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.networkLocation",
+              "displayName": "Service Provider",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032967,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.visitDuration",
+              "displayName": "Session Duration",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2630902,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.countOfVisitsToATransaction",
+              "displayName": "Sessions to Transaction",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2630900,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.socialContentURL",
+              "displayName": "Shared URL",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1652518,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.shoppingStage",
+              "displayName": "Shopping Stage",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3434521,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.searchCategory",
+              "displayName": "Site Search Category",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032818,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.searchUsed",
+              "displayName": "Site Search Status",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032761,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.socialAction",
+              "displayName": "Social Action",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1319056,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.clickSocialAnnotationType",
+              "displayName": "Social Annotation Type",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2444437,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.socialTarget",
+              "displayName": "Social Entity",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1319060,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.originatingSocialNetwork",
+              "displayName": "Social Network",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1652588,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.socialNetwork",
+              "displayName": "Social Source",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1319054,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.socialNetworkActionVisit",
+              "displayName": "Social Source and Action",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1319064,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.socialNetworkAction",
+              "displayName": "Social Source and Action",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1319058,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.hasSocialSourceReferral",
+              "displayName": "Social Source Referral",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1652523,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.socialEngagementType",
+              "displayName": "Social Type",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1319068,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.source",
+              "displayName": "Source",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032811,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.sourceMedium",
+              "displayName": "Source / Medium",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032813,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.sourcePropertyName",
+              "displayName": "Source Property Display Name",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 4546329,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.sourcePropertyId",
+              "displayName": "Source Property Tracking ID",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 4545414,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.searchStartPage",
+              "displayName": "Start Page",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047782,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.subContinent",
+              "displayName": "Sub Continent Region",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032806,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.targetingType",
+              "displayName": "Targeting Type",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3394394,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.userTimingCategory",
+              "displayName": "Timing Category",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2467064,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.userTimingLabel",
+              "displayName": "Timing Label",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2467119,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.userTimingVariable",
+              "displayName": "Timing Variable",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2467118,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.trafficType",
+              "displayName": "Traffic Type",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047792,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.transactionId",
+              "displayName": "Transaction Id",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032826,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.isTrueViewVideoAd",
+              "displayName": "TrueView Video Ad",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3479201,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.visitorBucket",
+              "displayName": "User Bucket",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 3237517,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.userDefinedValue",
+              "displayName": "User Defined Value",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1723314,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.visitorType",
+              "displayName": "User Type",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2630897,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.gwoCombinationId",
+              "displayName": "Variation",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2527803,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.nthWeek",
+              "displayName": "Week Index",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047879,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.week",
+              "displayName": "Week of the Year",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1032794,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.yearWeek",
+              "displayName": "Week of Year",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 2618964,
+              "scope": [
+                
+              ],
+              "family": "NUMBER",
+              "deprecated": false
+            },
+            {
+              "conceptName": "analytics.year",
+              "displayName": "Year",
+              "type": "DIMENSION",
+              "enumValues": [
+                
+              ],
+              "tooltipId": 1047890,
+              "scope": [
+                
+              ],
+              "family": "STRING",
+              "deprecated": false
+            }
+          ],
+          "groupView": true,
+          "hideGroupViewSwitch": false,
+          "hideSearchBox": false
+        },
+        "showSecondaryDimensionPicker": false,
+        "advancedFilterMode": false,
+        "filterExpression": "",
+        "smartSortEnabled": false,
+        "deltaSortEnabled": false,
+        "sortType": "",
+        "showSorttypeDropdown": true,
+        "auxComponentId": "",
+        "showPlotKeys": false,
+        "showFilterControl": true,
+        "disableSecondaryDimensionPicker": false,
+        "enableMultipleSecondaryKeys": false
+      },
+      "dataTable": {
+        "id": "2123-table-dataTable",
+        "type": "DataTable",
+        "dimension": [
+          {
+            "conceptName": "analytics.customDimension2",
+            "displayName": "Program",
+            "enumValues": [
+              
+            ],
+            "helpTopicId": 2721638
+          }
+        ],
+        "metric": [
+          {
+            "conceptName": "analytics.appviews",
+            "displayName": "Screen Views",
+            "enumValues": [
+              
+            ],
+            "smallerValueBetter": false,
+            "helpTopicId": 2413852
+          },
+          {
+            "conceptName": "analytics.visits",
+            "displayName": "Sessions",
+            "enumValues": [
+              
+            ],
+            "smallerValueBetter": false,
+            "helpTopicId": 2631008
+          }
+        ],
+        "sortConcept": {
+          "conceptName": "analytics.appviews",
+          "displayName": "Screen Views",
+          "type": "METRIC",
+          "enumValues": [
+            
+          ]
+        },
+        "sortDescending": true,
+        "rowCluster": [
+          {
+            "label": "1.",
+            "rowKey": [
+              {
+                "displayKey": "เสน่หาสัญญาแค้น",
+                "drilldownKey": "เสน่หาสัญญาแค้น",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "4,610,363",
+                    "percentOfTotal": "7.07%"
+                  },
+                  {
+                    "dataValue": "282,778",
+                    "percentOfTotal": "9.85%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "2.",
+            "rowKey": [
+              {
+                "displayKey": "รักนี้เจ้จัดให้",
+                "drilldownKey": "รักนี้เจ้จัดให้",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "2,226,244",
+                    "percentOfTotal": "3.42%"
+                  },
+                  {
+                    "dataValue": "142,005",
+                    "percentOfTotal": "4.94%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "3.",
+            "rowKey": [
+              {
+                "displayKey": "เรือนริษยา",
+                "drilldownKey": "เรือนริษยา",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "1,721,020",
+                    "percentOfTotal": "2.64%"
+                  },
+                  {
+                    "dataValue": "93,302",
+                    "percentOfTotal": "3.25%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "4.",
+            "rowKey": [
+              {
+                "displayKey": "เล่ห์นางฟ้า",
+                "drilldownKey": "เล่ห์นางฟ้า",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "1,598,031",
+                    "percentOfTotal": "2.45%"
+                  },
+                  {
+                    "dataValue": "88,240",
+                    "percentOfTotal": "3.07%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "5.",
+            "rowKey": [
+              {
+                "displayKey": "Club Friday The Series 4",
+                "drilldownKey": "Club Friday The Series 4",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "1,240,694",
+                    "percentOfTotal": "1.90%"
+                  },
+                  {
+                    "dataValue": "61,836",
+                    "percentOfTotal": "2.15%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "6.",
+            "rowKey": [
+              {
+                "displayKey": "Thailand's Got Talent Season 4",
+                "drilldownKey": "Thailand's Got Talent Season 4",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "1,072,422",
+                    "percentOfTotal": "1.65%"
+                  },
+                  {
+                    "dataValue": "50,755",
+                    "percentOfTotal": "1.77%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "7.",
+            "rowKey": [
+              {
+                "displayKey": "Take Me Out Thailand",
+                "drilldownKey": "Take Me Out Thailand",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "949,981",
+                    "percentOfTotal": "1.46%"
+                  },
+                  {
+                    "dataValue": "50,481",
+                    "percentOfTotal": "1.76%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "8.",
+            "rowKey": [
+              {
+                "displayKey": "เรื่องเล่าเช้านี้",
+                "drilldownKey": "เรื่องเล่าเช้านี้",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "883,220",
+                    "percentOfTotal": "1.36%"
+                  },
+                  {
+                    "dataValue": "27,498",
+                    "percentOfTotal": "0.96%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "9.",
+            "rowKey": [
+              {
+                "displayKey": "สมาคมเมียจ๋า",
+                "drilldownKey": "สมาคมเมียจ๋า",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "727,945",
+                    "percentOfTotal": "1.12%"
+                  },
+                  {
+                    "dataValue": "26,814",
+                    "percentOfTotal": "0.93%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "10.",
+            "rowKey": [
+              {
+                "displayKey": "กิ๊กดู๋สงครามเพลง",
+                "drilldownKey": "กิ๊กดู๋สงครามเพลง",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "711,255",
+                    "percentOfTotal": "1.09%"
+                  },
+                  {
+                    "dataValue": "40,905",
+                    "percentOfTotal": "1.42%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "11.",
+            "rowKey": [
+              {
+                "displayKey": "ปริศนาฟ้าแลบ",
+                "drilldownKey": "ปริศนาฟ้าแลบ",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "697,711",
+                    "percentOfTotal": "1.07%"
+                  },
+                  {
+                    "dataValue": "22,710",
+                    "percentOfTotal": "0.79%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "12.",
+            "rowKey": [
+              {
+                "displayKey": "คนอวดผี",
+                "drilldownKey": "คนอวดผี",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "695,522",
+                    "percentOfTotal": "1.07%"
+                  },
+                  {
+                    "dataValue": "32,013",
+                    "percentOfTotal": "1.11%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "13.",
+            "rowKey": [
+              {
+                "displayKey": "ครัวคุณต๋อย",
+                "drilldownKey": "ครัวคุณต๋อย",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "641,347",
+                    "percentOfTotal": "0.98%"
+                  },
+                  {
+                    "dataValue": "23,257",
+                    "percentOfTotal": "0.81%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "14.",
+            "rowKey": [
+              {
+                "displayKey": "Doctor Stranger",
+                "drilldownKey": "Doctor Stranger",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "554,475",
+                    "percentOfTotal": "0.85%"
+                  },
+                  {
+                    "dataValue": "37,485",
+                    "percentOfTotal": "1.31%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "15.",
+            "rowKey": [
+              {
+                "displayKey": "3 แซ่บ",
+                "drilldownKey": "3 แซ่บ",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "542,025",
+                    "percentOfTotal": "0.83%"
+                  },
+                  {
+                    "dataValue": "22,026",
+                    "percentOfTotal": "0.77%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "16.",
+            "rowKey": [
+              {
+                "displayKey": "ศีล 5 คนกล้าท้าอธรรม",
+                "drilldownKey": "ศีล 5 คนกล้าท้าอธรรม",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "532,449",
+                    "percentOfTotal": "0.82%"
+                  },
+                  {
+                    "dataValue": "29,003",
+                    "percentOfTotal": "1.01%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "17.",
+            "rowKey": [
+              {
+                "displayKey": "ตีท้ายครัว",
+                "drilldownKey": "ตีท้ายครัว",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "526,019",
+                    "percentOfTotal": "0.81%"
+                  },
+                  {
+                    "dataValue": "24,899",
+                    "percentOfTotal": "0.87%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "18.",
+            "rowKey": [
+              {
+                "displayKey": "The Heirs หยุดหัวใจนายไฮโซ (พากษ์ไทย)",
+                "drilldownKey": "The Heirs หยุดหัวใจนายไฮโซ (พากษ์ไทย)",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "518,084",
+                    "percentOfTotal": "0.80%"
+                  },
+                  {
+                    "dataValue": "39,674",
+                    "percentOfTotal": "1.38%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "19.",
+            "rowKey": [
+              {
+                "displayKey": "ลูกสาวพ่อมด",
+                "drilldownKey": "ลูกสาวพ่อมด",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "490,313",
+                    "percentOfTotal": "0.75%"
+                  },
+                  {
+                    "dataValue": "30,097",
+                    "percentOfTotal": "1.05%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "20.",
+            "rowKey": [
+              {
+                "displayKey": "บ้านนี้มีรัก",
+                "drilldownKey": "บ้านนี้มีรัก",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "477,863",
+                    "percentOfTotal": "0.73%"
+                  },
+                  {
+                    "dataValue": "20,247",
+                    "percentOfTotal": "0.70%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "21.",
+            "rowKey": [
+              {
+                "displayKey": "That winter The wind blows สายลมรัก ในฤดูหนาว (พากษ์ไทย)",
+                "drilldownKey": "That winter The wind blows สายลมรัก ในฤดูหนาว (พากษ์ไทย)",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "446,124",
+                    "percentOfTotal": "0.68%"
+                  },
+                  {
+                    "dataValue": "28,729",
+                    "percentOfTotal": "1.00%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "22.",
+            "rowKey": [
+              {
+                "displayKey": "ชิงร้อยชิงล้าน",
+                "drilldownKey": "ชิงร้อยชิงล้าน",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "445,304",
+                    "percentOfTotal": "0.68%"
+                  },
+                  {
+                    "dataValue": "20,110",
+                    "percentOfTotal": "0.70%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "23.",
+            "rowKey": [
+              {
+                "displayKey": "Nine Entertain",
+                "drilldownKey": "Nine Entertain",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "413,291",
+                    "percentOfTotal": "0.63%"
+                  },
+                  {
+                    "dataValue": "16,554",
+                    "percentOfTotal": "0.58%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "24.",
+            "rowKey": [
+              {
+                "displayKey": "วู้ดดี้เกิดมาคุย",
+                "drilldownKey": "วู้ดดี้เกิดมาคุย",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "413,154",
+                    "percentOfTotal": "0.63%"
+                  },
+                  {
+                    "dataValue": "16,554",
+                    "percentOfTotal": "0.58%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "25.",
+            "rowKey": [
+              {
+                "displayKey": "โมเมพาเพลิน",
+                "drilldownKey": "โมเมพาเพลิน",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "412,744",
+                    "percentOfTotal": "0.63%"
+                  },
+                  {
+                    "dataValue": "12,997",
+                    "percentOfTotal": "0.45%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "26.",
+            "rowKey": [
+              {
+                "displayKey": "Music Video ลูกทุ่ง",
+                "drilldownKey": "Music Video ลูกทุ่ง",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "411,513",
+                    "percentOfTotal": "0.63%"
+                  },
+                  {
+                    "dataValue": "13,407",
+                    "percentOfTotal": "0.47%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "27.",
+            "rowKey": [
+              {
+                "displayKey": "8 เทพอสูรมังกรฟ้า",
+                "drilldownKey": "8 เทพอสูรมังกรฟ้า",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "403,031",
+                    "percentOfTotal": "0.62%"
+                  },
+                  {
+                    "dataValue": "38,716",
+                    "percentOfTotal": "1.35%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "28.",
+            "rowKey": [
+              {
+                "displayKey": "Hormones วัยว้าวุ่น Season 2",
+                "drilldownKey": "Hormones วัยว้าวุ่น Season 2",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "394,822",
+                    "percentOfTotal": "0.61%"
+                  },
+                  {
+                    "dataValue": "12,176",
+                    "percentOfTotal": "0.42%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "29.",
+            "rowKey": [
+              {
+                "displayKey": "ตลก 6 ฉาก",
+                "drilldownKey": "ตลก 6 ฉาก",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "389,487",
+                    "percentOfTotal": "0.60%"
+                  },
+                  {
+                    "dataValue": "20,795",
+                    "percentOfTotal": "0.72%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "30.",
+            "rowKey": [
+              {
+                "displayKey": "ครีบนี้หัวใจมีเธอ",
+                "drilldownKey": "ครีบนี้หัวใจมีเธอ",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "365,819",
+                    "percentOfTotal": "0.56%"
+                  },
+                  {
+                    "dataValue": "16,554",
+                    "percentOfTotal": "0.58%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "31.",
+            "rowKey": [
+              {
+                "displayKey": "นัดกับนัด",
+                "drilldownKey": "นัดกับนัด",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "356,790",
+                    "percentOfTotal": "0.55%"
+                  },
+                  {
+                    "dataValue": "14,091",
+                    "percentOfTotal": "0.49%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "32.",
+            "rowKey": [
+              {
+                "displayKey": "นาทีฉุกเฉิน",
+                "drilldownKey": "นาทีฉุกเฉิน",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "331,344",
+                    "percentOfTotal": "0.51%"
+                  },
+                  {
+                    "dataValue": "12,860",
+                    "percentOfTotal": "0.45%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "33.",
+            "rowKey": [
+              {
+                "displayKey": "ศึก 12 ราศี",
+                "drilldownKey": "ศึก 12 ราศี",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "326,009",
+                    "percentOfTotal": "0.50%"
+                  },
+                  {
+                    "dataValue": "15,596",
+                    "percentOfTotal": "0.54%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "34.",
+            "rowKey": [
+              {
+                "displayKey": "คังชิ คัมภีร์ตระกูลจิ้งจอก (พากษ์ไทย)",
+                "drilldownKey": "คังชิ คัมภีร์ตระกูลจิ้งจอก (พากษ์ไทย)",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "323,957",
+                    "percentOfTotal": "0.50%"
+                  },
+                  {
+                    "dataValue": "33,517",
+                    "percentOfTotal": "1.17%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "35.",
+            "rowKey": [
+              {
+                "displayKey": "ผัวชั่วคราว ",
+                "drilldownKey": "ผัวชั่วคราว ",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "322,725",
+                    "percentOfTotal": "0.50%"
+                  },
+                  {
+                    "dataValue": "11,765",
+                    "percentOfTotal": "0.41%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "36.",
+            "rowKey": [
+              {
+                "displayKey": "รักออกฤทธิ์",
+                "drilldownKey": "รักออกฤทธิ์",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "313,423",
+                    "percentOfTotal": "0.48%"
+                  },
+                  {
+                    "dataValue": "15,049",
+                    "percentOfTotal": "0.52%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "37.",
+            "rowKey": [
+              {
+                "displayKey": "FoodTravel",
+                "drilldownKey": "FoodTravel",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "312,875",
+                    "percentOfTotal": "0.48%"
+                  },
+                  {
+                    "dataValue": "7,251",
+                    "percentOfTotal": "0.25%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "38.",
+            "rowKey": [
+              {
+                "displayKey": "ตื่นมาคุย",
+                "drilldownKey": "ตื่นมาคุย",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "311,507",
+                    "percentOfTotal": "0.48%"
+                  },
+                  {
+                    "dataValue": "18,879",
+                    "percentOfTotal": "0.66%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "39.",
+            "rowKey": [
+              {
+                "displayKey": "ดาวกระจาย",
+                "drilldownKey": "ดาวกระจาย",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "305,625",
+                    "percentOfTotal": "0.47%"
+                  },
+                  {
+                    "dataValue": "16,006",
+                    "percentOfTotal": "0.56%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "40.",
+            "rowKey": [
+              {
+                "displayKey": "ตีสิบ",
+                "drilldownKey": "ตีสิบ",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "299,332",
+                    "percentOfTotal": "0.46%"
+                  },
+                  {
+                    "dataValue": "10,671",
+                    "percentOfTotal": "0.37%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "41.",
+            "rowKey": [
+              {
+                "displayKey": "Love Blood จัดรักให้ตรงกรุ๊ป",
+                "drilldownKey": "Love Blood จัดรักให้ตรงกรุ๊ป",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "297,690",
+                    "percentOfTotal": "0.46%"
+                  },
+                  {
+                    "dataValue": "16,827",
+                    "percentOfTotal": "0.59%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "42.",
+            "rowKey": [
+              {
+                "displayKey": "ที่นี่หมอชิต",
+                "drilldownKey": "ที่นี่หมอชิต",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "288,661",
+                    "percentOfTotal": "0.44%"
+                  },
+                  {
+                    "dataValue": "14,365",
+                    "percentOfTotal": "0.50%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "43.",
+            "rowKey": [
+              {
+                "displayKey": "Club Friday The Series Season 3",
+                "drilldownKey": "Club Friday The Series Season 3",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "287,840",
+                    "percentOfTotal": "0.44%"
+                  },
+                  {
+                    "dataValue": "9,440",
+                    "percentOfTotal": "0.33%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "44.",
+            "rowKey": [
+              {
+                "displayKey": "Music Video Thai",
+                "drilldownKey": "Music Video Thai",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "281,547",
+                    "percentOfTotal": "0.43%"
+                  },
+                  {
+                    "dataValue": "5,199",
+                    "percentOfTotal": "0.18%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "45.",
+            "rowKey": [
+              {
+                "displayKey": "ดันดารา",
+                "drilldownKey": "ดันดารา",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "278,263",
+                    "percentOfTotal": "0.43%"
+                  },
+                  {
+                    "dataValue": "13,270",
+                    "percentOfTotal": "0.46%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "46.",
+            "rowKey": [
+              {
+                "displayKey": "The Palace: The Lost Daughter จอมนางวังต้องห้าม 3 (พากษ์ไทย)",
+                "drilldownKey": "The Palace: The Lost Daughter จอมนางวังต้องห้าม 3 (พากษ์ไทย)",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "277,306",
+                    "percentOfTotal": "0.43%"
+                  },
+                  {
+                    "dataValue": "21,615",
+                    "percentOfTotal": "0.75%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "47.",
+            "rowKey": [
+              {
+                "displayKey": "กาละแมร์",
+                "drilldownKey": "กาละแมร์",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "271,697",
+                    "percentOfTotal": "0.42%"
+                  },
+                  {
+                    "dataValue": "11,629",
+                    "percentOfTotal": "0.40%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "48.",
+            "rowKey": [
+              {
+                "displayKey": "เจาะข่าวเด่น",
+                "drilldownKey": "เจาะข่าวเด่น",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "265,130",
+                    "percentOfTotal": "0.41%"
+                  },
+                  {
+                    "dataValue": "10,260",
+                    "percentOfTotal": "0.36%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "49.",
+            "rowKey": [
+              {
+                "displayKey": "ตลาดสดสนามเป้า",
+                "drilldownKey": "ตลาดสดสนามเป้า",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "262,120",
+                    "percentOfTotal": "0.40%"
+                  },
+                  {
+                    "dataValue": "11,218",
+                    "percentOfTotal": "0.39%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          },
+          {
+            "label": "50.",
+            "rowKey": [
+              {
+                "displayKey": "One Well-Raised Daughter",
+                "drilldownKey": "One Well-Raised Daughter",
+                "drillable": false
+              }
+            ],
+            "row": [
+              {
+                "rowValue": [
+                  {
+                    "dataValue": "255,417",
+                    "percentOfTotal": "0.39%"
+                  },
+                  {
+                    "dataValue": "14,638",
+                    "percentOfTotal": "0.51%"
+                  }
+                ]
+              }
+            ],
+            "subCluster": [
+              
+            ],
+            "selected": false
+          }
+        ],
+        "clusteredRowLabel": [
+          {
+            "label": "",
+            "subClusterLabel": [
+              {
+                "label": "Jun 15, 2014 - Jul 15, 2014",
+                "subClusterLabel": [
+                  
+                ]
+              }
+            ]
+          }
+        ],
+        "isPlotKeys": false,
+        "tablePagination": {
+          "start": 0,
+          "end": 50,
+          "count": 2302,
+          "show": 50,
+          "display5000Rows": true
+        },
+        "dimensionSortDisabled": false,
+        "metricSortDisabled": false,
+        "dimensionFilterGroup": [
+          
+        ],
+        "showHelpIcons": false,
+        "showDimensionHelpIcons": true,
+        "metricFiltersApplied": false,
+        "fixedDimensionCount": 1,
+        "scrollableTableEnabled": false,
+        "multipleSecKeysEnabled": false
+      }
+    },
+    {
+      "id": "timestampMessage",
+      "type": "TimestampMessage",
+      "isDashboard": false,
+      "isHomepage": false,
+      "utcDatetime": "2014-07-16T09:02:43.253Z"
+    }
+  ],
+  "enableSamplingControl": true,
+  "samplingData": [
+    {
+      "id": "2123-table",
+      "sampled": true,
+      "canBeSampled": true,
+      "samplingNumbers": [
+        {
+          "numSamplesRead": 187962,
+          "samplingSpaceSize": 25714334
+        }
+      ]
+    },
+    {
+      "id": "2123-table-tableControl",
+      "sampled": false,
+      "canBeSampled": false,
+      "samplingNumbers": [
+        {
+          "numSamplesRead": 0,
+          "samplingSpaceSize": 0
+        }
+      ]
+    },
+    {
+      "id": "2123-table-dataTable",
+      "sampled": false,
+      "canBeSampled": false,
+      "samplingNumbers": [
+        {
+          "numSamplesRead": 0,
+          "samplingSpaceSize": 0
+        }
+      ]
+    },
+    {
+      "id": "timestampMessage",
+      "sampled": false,
+      "canBeSampled": false,
+      "samplingNumbers": [
+        {
+          "numSamplesRead": 0,
+          "samplingSpaceSize": 0
+        }
+      ]
+    }
+  ],
+  "pageMetadata": {
+    "hats-survey-data": {
+      "hats-survey-id": "wdporbn2ogxbs3jvvdib2p2kme",
+      "hats-survey-name": "Overall satisfaction survey"
+    }
+  }
+}
