@@ -10,7 +10,6 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	"sync"
 )
 
 func main() {
@@ -26,6 +25,7 @@ func main() {
 	a := &AnalyticsReader{db: db}
 
 	shows := a.getShow(*filePtr)
+
 	for _, show := range shows {
 		fmt.Println(show.Title, show.ViewCount)
 		a.updateView(show)
@@ -49,8 +49,7 @@ func (a *AnalyticsReader) getShow(file string) []*ShowItem {
 	}
 
 	var shows []*ShowItem
-
-	for _, rowCluster := range analytics.Components[0].DataTable.RowClusters {
+	for _, rowCluster := range analytics.Components[1].DataTable.RowClusters {
 		displayKey := rowCluster.RowKey[0].DisplayKey
 		dataValue, err := strconv.Atoi(strings.Replace(rowCluster.Row[0].RowValue[0].DataValue, ",", "", -1))
 		if err != nil {
@@ -59,44 +58,6 @@ func (a *AnalyticsReader) getShow(file string) []*ShowItem {
 
 		shows = append(shows, &ShowItem{displayKey, dataValue})
 	}
-	return shows
-}
-
-func (a *AnalyticsReader) getShowAsync(file string) chan *ShowItem {
-	b, err := ioutil.ReadFile(file)
-	if err != nil {
-		panic(err)
-	}
-
-	var analytics Analytics
-	err = json.Unmarshal(b, &analytics)
-	if err != nil {
-		panic(err)
-	}
-
-	shows := make(chan *ShowItem)
-	var waitGroup sync.WaitGroup
-	waitGroup.Add(len(analytics.Components[0].DataTable.RowClusters))
-
-	for _, rowCluster := range analytics.Components[0].DataTable.RowClusters {
-		go func(rowCluster *RowCluster) {
-			displayKey := rowCluster.RowKey[0].DisplayKey
-			dataValue, err := strconv.Atoi(strings.Replace(rowCluster.Row[0].RowValue[0].DataValue, ",", "", -1))
-			if err != nil {
-				panic(err)
-			}
-
-			shows <- &ShowItem{displayKey, dataValue}
-			waitGroup.Done()
-		}(rowCluster)
-	}
-
-	go func() {
-		waitGroup.Wait()
-
-		close(shows)
-	}()
-
 	return shows
 }
 
